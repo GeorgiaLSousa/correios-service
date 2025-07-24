@@ -29,8 +29,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	/*	 * Uncomment the following line to enable Docker Compose support
+	 * developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+		 */
 	runtimeOnly 'com.h2database:h2'
+
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
