@@ -1,4 +1,6 @@
-Correios Service 🚚💨
+# CORREIOS SERVICE 🚚💨
+
+
 Bem-vindo(a) ao Correio Service! Esta é uma API REST desenvolvida em Java com Spring Boot, criada para resolver um desafio comum: consultar um endereço a partir de um CEP e calcular o valor do frete para aquela localidade.
 
 O sistema foi construído com foco em boas práticas, como os princípios SOLID, para garantir um código limpo, organizado e fácil de manter.
@@ -12,18 +14,22 @@ Histórico de Consultas: Cada busca bem-sucedida é registrada em um banco de da
 
 Tratamento de Erros: A API lida de forma inteligente com CEPs inválidos ou inexistentes, retornando respostas claras sem quebrar a aplicação.
 
-Tecnologias Utilizadas 🛠️
-Java 21
 
-Spring Boot (Web, Data JPA)
+## Tecnologias Utilizadas 🛠️
+* *Java 21* 
 
-Maven (Gerenciador de dependências)
+* *Spring Boot (Web, Data JPA)* 
 
-Banco de Dados H2 (Em memória)
+* *Maven (Gerenciador de dependências)* 
 
-Lombok (Para reduzir código boilerplate)
+* *Banco de Dados H2 (Em memória)* 
 
-Arquitetura do Projeto 🏛️
+* *Lombok (Para reduzir código boilerplate)* 
+
+  
+## Arquitetura do Projeto 🏛️
+
+
 O projeto foi estruturado de forma a separar as responsabilidades, facilitando a manutenção e a escalabilidade:
 
 ConsultaController: A porta de entrada da API. Expõe o endpoint REST e lida com as requisições e respostas HTTP.
@@ -38,7 +44,7 @@ ConsultaLog: A entidade JPA que mapeia a tabela de logs no banco de dados.
 
 DTOs (ConsultaFreteResponse, EnderecoResponse): Objetos simples que definem a estrutura dos dados que trafegam na aplicação.
 
-Como Executar o Projeto 🚀
+## Como Executar o Projeto 🚀
 É bem simples colocar a API para rodar na sua máquina.
 
 Clone o repositório:
@@ -56,7 +62,7 @@ mvn spring-boot:run
 
 Pronto! A API estará no ar, esperando por requisições em http://localhost:8080.
 
-Como Usar a API 🎯
+## Como Usar a API 🎯
 O uso é bem direto através do endpoint principal.
 
 Endpoint: GET /consulta/{cep}
