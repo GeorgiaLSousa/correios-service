@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ConsultaFreteResponse {
 
+
     private String cep;
     private String logradouro;
     private String bairro;

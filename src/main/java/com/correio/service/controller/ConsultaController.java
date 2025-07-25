@@ -17,6 +17,11 @@ public class ConsultaController {
     @Autowired
     private ConsultaService consultaService;
 
+    /*
+     * Endpoint para consultar o frete baseado no CEP.
+     * @param cep o CEP a ser consultado
+
+     */
     @GetMapping("/{cep}")
     public ConsultaFreteResponse consultaFrete(@PathVariable String cep) {
         return consultaService.consultaFrete(cep);

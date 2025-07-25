@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalcularFreteService implements FreteService{
 
+    /* Implementação do metodo CalcularFrete para calcular
+     *           valor do frete com base na UF */
+
     @Override
     public Double CalcularFrete(String uf) {
 

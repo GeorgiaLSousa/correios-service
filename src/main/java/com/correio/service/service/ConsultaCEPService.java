@@ -25,10 +25,12 @@ public class ConsultaCEPService implements ConsultaService {
     @Override
     public ConsultaFreteResponse consultaFrete(String cep){
 
+        // Verifica se o CEP é válido
         EnderecoResponse endereco = cepClient.buscarCep(cep);
 
         String uf = endereco.getUf();
 
+        // Calcula o valor do frete com base na UF
         Double valorFrete = freteService.CalcularFrete(uf);
 
         ConsultaLog log = new ConsultaLog(

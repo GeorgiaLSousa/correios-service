@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class CepInexistente extends RuntimeException {
 
 
+/*
+    * Exceção lançada quando o CEP consultado não existe.
+ */
     public CepInexistente(String message) {
         super(message);
     }
