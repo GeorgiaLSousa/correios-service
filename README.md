@@ -100,3 +100,6 @@ Senha: (deixe em branco)
 Após conectar, você pode executar SELECT * FROM CONSULTA_LOG; para ver os registros.
 
 Repositório: correios-service
+
+<img width="891" height="573" alt="image" src="https://github.com/user-attachments/assets/e27f92ce-5745-414b-a026-8e476ec1d520" />
+
